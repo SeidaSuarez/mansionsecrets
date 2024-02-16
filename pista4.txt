@@ -1,0 +1,2 @@
+¡Haz encontrado el laboratorio!, lugar dond el Dr. Rivera hacía sus experimentos, como ves, hay una máquina que deberás hacer funcionar. Para ello, tendrás que utilizar esta imagen en docker: sidatsuarezgarcia/my-whalesay.
+ 
