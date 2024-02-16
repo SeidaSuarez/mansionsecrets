@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -78,34 +80,102 @@ body {
     max-height: 100%;
 }
 
+.background-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 
-/* Animación fadeInZoom */
-@keyframes fadeInZoom {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    background-size: cover;
+    background-position: center;
 }
 
-.animate-victory {
-    animation: fadeInZoom 2s ease-out forwards;
+.images-container {
+    width: 100%;
+    max-width: 1200px;
+    /* Ajustado para permitir imágenes más grandes */
+    display: flex;
+    justify-content: space-between;
+    /* Maximiza la separación entre imágenes */
+    align-items: center;
+    margin-top: 50px;
+    /* Controla qué tan abajo aparecen las imágenes */
 }
 
-.victory-message h1 {
-    font-size: 3rem; /* Hace el título más grande */
-    margin-bottom: 1rem;
+.image-container {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: -45px;
+    /* Aumentado para más separación entre imágenes */
 }
 
-.victory-message p {
-    font-size: 1.5rem; /* Hace el párrafo más grande */
-    margin-bottom: 2rem;
+.image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.victory-message .btn {
-    font-size: 1.25rem; /* Hace el botón más grande */
-    padding: 0.75rem 1.5rem;
+.image-container img {
+    width: 330px;
+    /* Imágenes más grandes */
+    height: auto;
+    /* Mantiene la proporción de las imágenes */
 }
+
+.overlay-text-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Fondo oscuro con opacidad */
+    padding: 20px;
+    /* Espacio interior para separar el texto de los bordes */
+    border-radius: 10px;
+    /* Bordes redondeados para un aspecto más suave */
+    width: 80%;
+    /* Ajusta el ancho del contenedor de texto según necesites */
+    max-width: 700px;
+    /* Ancho máximo para grandes pantallas */
+    z-index: 2;
+}
+
+.highlighted-rectangle {
+    display: block;
+    border: 2px solid rgba(0, 0, 0, 0);
+    /* Amarillo claro con algo de transparencia */
+    border-radius: 5px;
+    /* Bordes ligeramente redondeados */
+    width: 355px;
+    /* Ancho inicial, ajustable */
+    height: 800px;
+    /* Altura inicial, ajustable */
+    margin: 50px auto;
+    /* Aumenta el margen superior e inferior para bajarlos más y separarlos */
+    transition: all 0.3s ease;
+    /* Transición suave para cambios de estilo */
+    background-color: #ffffff00;
+    /* Fondo transparente */
+}
+
+.highlighted-rectangle:hover {
+    box-shadow: 0 0 150px rgba(255, 235, 145, 0.503);
+    /* Efecto de iluminación al pasar el mouse */
+}
+
+.image-container {
+    display: inline-block;
+    /* Ajuste para que los cuadrados estén en línea */
+    text-align: center;
+    margin: 0 -130px;
+    /* Aumenta la separación entre los cuadrados */
+}
+
+.images-container {
+    padding-top: 250px;
+    /* Aumenta el espacio superior para bajar los cuadrados aún más si es necesario */
+}
+
+

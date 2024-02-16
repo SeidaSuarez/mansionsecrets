@@ -1,0 +1,94 @@
+
+
+/* Efectos de animación para la entrada del mensaje de victoria */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-victory {
+    animation: fadeIn 2s ease forwards;
+}
+
+/* Efecto de desvanecimiento para el fondo */
+.background-opacity {
+    animation: fadeBackground 5s ease-in-out infinite alternate;
+}
+
+@keyframes fadeBackground {
+    0% { background-color: rgba(0, 0, 0, 0.5); }
+    100% { background-color: rgba(0, 0, 0, 0.7); }
+}
+
+/* Efectos de sombra para los cuadrados destacados */
+.highlighted-rectangle {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(255, 235, 145, 0.6); }
+    100% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+}
+
+/* Efectos de animación para los enlaces */
+.btn-success {
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 255, 0, 0.4);
+}
+
+/* Mejora la visibilidad del texto con un efecto de resplandor */
+.overlay-text-container h1,
+.overlay-text-container h5,
+.overlay-text-container h6 {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Efecto de animación al pasar el ratón sobre las imágenes */
+.image-container:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Asegura que el logotipo tenga un efecto visual al interactuar */
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.overlay-text-container {
+    position: absolute;
+    top: 50%;
+    /* Posiciona el contenedor al 50% de la altura */
+    left: 50%;
+    /* Posiciona el contenedor al 50% de la anchura */
+    transform: translate(-50%, -50%);
+    /* Centra el contenedor exactamente en el medio */
+    text-align: center;
+    color: white;
+    /* Asegúrate de que el texto sea legible sobre el fondo oscuro */
+    z-index: 2;
+    /* Eleva el texto por encima del fondo */
+}
+
+.background-full {
+    position: relative;
+    /* Posicionamiento relativo para los elementos absolutos dentro */
+    background-image: url('/img/escenas/laboratorio.png');
+    background-size: cover;
+    /* Asegura que la imagen de fondo cubra todo el div */
+    background-position: center;
+    /* Centra la imagen de fondo */
+}
+
+
+
+
