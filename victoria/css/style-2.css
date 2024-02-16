@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    /* Asegura que el contenido esté por encima de la capa de opacidad */
+}
+
+.background-full {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 1;
+}
+
+.explore-button {
+    margin-top: 30px;
+    background: linear-gradient(to bottom, #f34b66, #992431);
+    border-color: #f34b66;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.explore-button:hover {
+    background: linear-gradient(to bottom, #992431, #7e1f3d);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+/* Logotipo en la esquina superior izquierda */
+.logo {
+    position: absolute;
+    top: 20px;
+    /* Ajusta el margen superior según sea necesario */
+    left: 20px;
+    /* Ajusta el margen izquierdo según sea necesario */
+    z-index: 1000;
+    /* Asegura que el logotipo esté sobre otros elementos */
+}
+
+/* Centrar el contenedor de la imagen en la página */
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    /* Ajusta la altura del contenedor al 50% de la altura del viewport */
+    width: 50%;
+    /* Ajusta la anchura del contenedor al 50% de la anchura del viewport */
+    margin: auto;
+    /* Centra el contenedor en la página */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* Estos estilos junto con left y right centran el div */
+    left: 0;
+    right: 0;
+}
+
+/* Opcional: Estilos para la imagen centralizada */
+.centered-image {
+    max-width: 100%;
+    /* Asegura que la imagen no exceda el contenedor */
+    max-height: 100%;
+}
+
+
+/* Animación fadeInZoom */
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-victory {
+    animation: fadeInZoom 2s ease-out forwards;
+}
+
+.victory-message h1 {
+    font-size: 3rem; /* Hace el título más grande */
+    margin-bottom: 1rem;
+}
+
+.victory-message p {
+    font-size: 1.5rem; /* Hace el párrafo más grande */
+    margin-bottom: 2rem;
+}
+
+.victory-message .btn {
+    font-size: 1.25rem; /* Hace el botón más grande */
+    padding: 0.75rem 1.5rem;
+}
