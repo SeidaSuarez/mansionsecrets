@@ -1,2 +1,6 @@
-¡Haz encontrado el laboratorio!, lugar donde el Dr. Rivera hacía sus experimentos, como ves, hay una máquina que deberás hacer funcionar. Para ello, tendrás que utilizar esta imagen en docker: sidatsuarezgarcia/mensaje-diario.
+¡Haz encontrado el laboratorio!, lugar donde el Dr. Rivera hacía sus experimentos, como ves, hay una 
+máquina que deberás hacer funcionar. Para ello, tendrás que utilizar esta imagen 
+en docker: imagen- sidatsuarezgarcia/mensaje-diario.
+
+Busca la imagen desde docker desktop o docker hub y haz uso de de la misma.
  
