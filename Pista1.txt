@@ -1,1 +1,3 @@
 Bienvenido al vestibulo, ahora te encuentras que tienes dos caminos que escoger: el estudio y la biblioteca. El camino correcto para resolver el misterio es el ESTUDIO.
+Pd: Para acceder al estudio, tendrás que utilizar el comando conveniente para entrar a dicha habitación.
+Además nos congratula darte la bienvenida y te favorecemos la herramienta es una "lupa" con la que pueds ver el plano de la mansión.
