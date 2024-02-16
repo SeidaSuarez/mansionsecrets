@@ -1,0 +1,1 @@
+Has encontrado la llave, para utilizarla tendrás que usar otro comando para poder acceder a la siguiente habitación, el comando fusiona otra rama con la rama en la que estés.
