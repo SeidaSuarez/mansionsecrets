@@ -2,5 +2,5 @@
 máquina que deberás hacer funcionar. Para ello, tendrás que utilizar esta imagen 
 en docker: imagen- sidatsuarezgarcia/mensaje-diario.
 
-Busca la imagen desde docker desktop o docker hub y haz uso de de la misma.
+Busca la imagen desde docker desktop o docker hub y haz uso de de la misma con los comandos corespondientes.
  
